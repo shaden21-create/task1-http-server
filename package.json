@@ -1,0 +1,21 @@
+{
+  "name": "task1-http-server",
+  "version": "1.0.0",
+  "description": "A local HTTP server built with only Node.js's built-in `http` module (no Express).",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shaden21-create/task1-http-server.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/shaden21-create/task1-http-server/issues"
+  },
+  "homepage": "https://github.com/shaden21-create/task1-http-server#readme"
+}
