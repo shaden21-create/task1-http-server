@@ -30,6 +30,9 @@ Screenshots are in the `screenshots/` folder.
 - HTTP request/response lifecycle and client-server architecture
 - Status codes (200, 404) and JSON payloads
 - Native Node routing using `req.method` and `req.url`
+
+
+
 ## Screenshots
 
 ### Browser DevTools
