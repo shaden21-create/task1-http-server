@@ -9,7 +9,7 @@ const users = [
   { id: 3, name: "Omar", role: "user" },
 ];
 
-// Helper: send a JSON response with the right status and headers
+
 function sendJson(res, statusCode, data) {
   const body = JSON.stringify(data);
   res.writeHead(statusCode, {
@@ -20,7 +20,7 @@ function sendJson(res, statusCode, data) {
 }
 
 const server = http.createServer((req, res) => {
-  // Strip any query string (?x=1) so routing matches the path only
+  
   const path = req.url.split("?")[0];
   console.log(`${req.method} ${path}`);
 
@@ -35,7 +35,7 @@ const server = http.createServer((req, res) => {
     return sendJson(res, 200, { count: users.length, users });
   }
 
-  // Bonus: health endpoint
+  
   if (req.method === "GET" && path === "/api/health") {
     return sendJson(res, 200, {
       status: "ok",
@@ -45,7 +45,7 @@ const server = http.createServer((req, res) => {
     });
   }
 
-  // Anything else
+  
   sendJson(res, 404, { error: "Not Found", path });
 });
 
